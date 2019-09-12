@@ -30,21 +30,21 @@ export default {
         ID: ''
       }
   },
-  methods:{
-    logout (){
-      localStorage.removeItem('usertoken')
-      this.ID = ''
-    }
-  },
-  mounted(){
-    console.log(localStorage)
-    if(localStorage.usertoken && !this.ID){
-      console.log("running at App.Vue!")
-      var token = jwtDecode(localStorage.usertoken)
-      this.ID = token.ID
-      console.log("App.vue => You are logged in as " + token.ID)
-    }
-  }
+  // methods:{
+  //  logout (){
+  //    localStorage.removeItem('usertoken')
+  //    this.ID = ''
+  // }
+  // },
+  // mounted(){
+  //   console.log(localStorage)
+  //   if(localStorage.usertoken && !this.ID){
+  //     console.log("running at App.Vue!")
+  //     var token = jwtDecode(localStorage.usertoken)
+  //     this.ID = token.ID
+  //     console.log("App.vue => You are logged in as " + token.ID)
+  //   }
+  // }
 }
 </script>
 
