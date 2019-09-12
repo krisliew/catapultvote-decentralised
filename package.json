@@ -1,8 +1,8 @@
 {
-  "name": "CatapultVote",
+  "name": "catapultvote",
   "version": "1.0.0",
   "description": "An online voting system using NEM Catapult Blockchain",
-  "author": "Jing <soonjinx@github.com>",
+  "author": "Soon Jing <39853992+soonjing@users.noreply.github.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -74,5 +74,15 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": ".postcssrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soonjing/catapultvote-decentralised.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soonjing/catapultvote-decentralised/issues"
+  },
+  "homepage": "https://github.com/soonjing/catapultvote-decentralised#readme"
 }
