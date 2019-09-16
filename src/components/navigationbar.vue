@@ -18,14 +18,13 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" id="guideNav" :href="guidehref">Guide</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" id="faqNav" :href="faqhref">Q&A</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" id="contactNav" :href="contacthref">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="faqNav" :href="faqhref">Q&A</a>
-            </li>
-
            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -9,14 +9,14 @@
           <br /> <br />
           <a class="btn btn-primary waves-effect border-0 btn-lg js-scroll-trigger" href="#about">Read More</a>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="btn btn-white waves-effect btn-lg border-white text-white" href="/entry">Register Now</a>
+          <a class="btn btn-white waves-effect btn-lg border-white text-white" href="/createpoll">Create Poll</a>
         </div>
       </header>
       <About />
       <Feature />
       <Guide />
-      <Contact />
       <Faq />
+      <Contact />      
     </div>
   </div>
 </template>
