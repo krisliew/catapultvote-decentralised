@@ -58,11 +58,4 @@ section h2{
     padding-bottom:15px;
     margin-bottom:15px;
 }
-/* 
-vue init webpack [CatapultVote]
-
-npm run dev [localhost:8080]
-
-npm install vue-router vue-resource --save
- */
 </style>

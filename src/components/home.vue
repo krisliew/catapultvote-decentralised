@@ -13,7 +13,6 @@
         </div>
       </header>
       <About />
-      <Feature />
       <Guide />
       <Faq />
       <Contact />      
@@ -24,7 +23,6 @@
 <script>
 import Navigation from './navigationbar'
 import About from './homeComponents/about'
-import Feature from './homeComponents/feature'
 import Guide from './homeComponents/guide'
 import Contact from './homeComponents/contact'
 import Faq from './homeComponents/faq'
@@ -34,7 +32,6 @@ import Faq from './homeComponents/faq'
     components: {
       'Navigation':Navigation,
       'About': About,
-      'Feature':Feature,
       'Guide':Guide,
       'Contact':Contact,
       'Faq':Faq
@@ -44,18 +41,16 @@ import Faq from './homeComponents/faq'
       }
     },
     mounted(){
-      var theAnchor = [];
-      theAnchor.push(document.getElementById("homeNav"));
-      theAnchor.push(document.getElementById("aboutNav"));
-      theAnchor.push(document.getElementById("featureNav"));
-      theAnchor.push(document.getElementById("guideNav"));
-      theAnchor.push(document.getElementById("contactNav"));
+      // var theAnchor = [];
+      // theAnchor.push(document.getElementById("homeNav"));
+      // theAnchor.push(document.getElementById("aboutNav"));
+      // theAnchor.push(document.getElementById("guideNav"));
+      // theAnchor.push(document.getElementById("contactNav"));
             
-      theAnchor[0].href = "#page-top";
-      theAnchor[1].href = "#about";
-      theAnchor[2].href = "#feature";
-      theAnchor[3].href = "#guide";
-      theAnchor[4].href = "#contact";
+      // theAnchor[0].href = "#page-top";
+      // theAnchor[1].href = "#about";
+      // theAnchor[2].href = "#guide";
+      // theAnchor[3].href = "#contact";
     }
   }
 </script>

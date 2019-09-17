@@ -188,9 +188,6 @@ export default {
       }
     },
     mounted(){
-      var theAnchor = document.getElementById("moduleNav")
-      theAnchor.href = "#modules"
-      
       // if(!localStorage.usertoken){
       //   router.push({name: 'Entry' })
       // }else if(localStorage.usertoken){

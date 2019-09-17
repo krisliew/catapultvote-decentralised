@@ -1,6 +1,6 @@
 <template>
  <!-- REF: https://codepen.io/dar-o-t-villena/pen/vbMQLR?&page=1  -->
-  <section id="faq" class="bg-light">
+  <section id="faq">
       <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -28,7 +28,7 @@
               <a>What can I do with Catapult Vote?</a>
               <div class="content">
                 <p>
-                  You can create your own poll, bookmark polls that you wish to review and vote for polls.
+                  You can create your own poll, spectate and vote for polls.
                 </p>
               </div>
             </div>
@@ -36,7 +36,7 @@
               <a>How is Catapult Vote different from the others?</a>
               <div class="content">
                 <p>
-                  The poll data and result are stored in multiple node/server rather than a single centralised server which prevent the tampering of poll result.
+                  The poll data and result are stored synchronously in multiple node/server rather than a single centralised server which offer alot more security and transparency.
                 </p>
               </div>
             </div>
@@ -49,19 +49,11 @@
               </div>
             </div>
             <div class="accordion-item">
-              <a>Where can I get the Public Address when I am registering?</a>
-              <div class="content">
-                <p>
-                  You can either click the link right above the Public Address field to 
-				generate your very own public address or use your existing public address that you already have.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
               <a>How many times can I vote in a poll?</a>
               <div class="content">
                 <p>
-                  Catapult Vote only allows 1 vote to be placed on 1 poll, and no multiple votes are available
+                  Catapult Vote only allows 1 vote to be placed on 1 poll, and no multiple votes are available. 
+                  Additional vote will be counted as 1, and multiple vote will be ignored.
                 </p>
               </div>
             </div>
@@ -69,17 +61,17 @@
               <a>How do voters place their vote?</a>
               <div class="content">
                 <p>
-                  Voters can login with their account and search for the polls. Once the voter selects 
+                  Voters can search for the polls. Once the voter found 
                   a particular poll, the user can then place their vote by clicking the “Vote” button 
                   that is placed by the candidate details.
                 </p>
               </div>
             </div>
             <div class="accordion-item">
-              <a>Can I delete my polls?</a>
+              <a>Can I delete my polls or votes?</a>
               <div class="content">
                 <p>
-                  It is not possible as the polls and records in the blockchain are immutable thus they cannot be modified or removed in any way.
+                  It is not possible as the polls and vote records in the blockchain are immutable thus they cannot be modified or removed in any way.
                 </p>
               </div>
             </div>
@@ -87,11 +79,10 @@
               <a>When can we see the results of the poll?</a>
               <div class="content">
                 <p>
-                 The results of the poll are updated in real- time as they are retrieved from the blockchain directly when you wish to see them.
+                 The results of the poll are updated in real-time as they are retrieved from the blockchain directly when you wish to see them.
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </div>

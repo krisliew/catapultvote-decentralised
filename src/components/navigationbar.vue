@@ -11,21 +11,24 @@
               <a :class="homeClass" id="homeNav" :href="homehref">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="aboutNav" :href="abouthref">About</a>
+              <a class="nav-link js-scroll-trigger" :href="abouthref">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="featureNav" :href="featurehref">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="guideNav" :href="guidehref">Guide</a>
+              <a class="nav-link js-scroll-trigger" :href="guidehref">Guide</a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="faqNav" :href="faqhref">Q&A</a>
+              <a class="nav-link js-scroll-trigger" :href="faqhref">Q&A</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" id="contactNav" :href="contacthref">Contact</a>
+              <a class="nav-link js-scroll-trigger" :href="contacthref">Contact</a>
             </li>
-           <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a :class="createPollClass" href="/createpoll">Create Poll</a>
+            </li>
+            <li class="nav-item">
+              <a :class="resultClass" href="/result">Search Poll</a>
+            </li>
+           <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
@@ -35,7 +38,7 @@
                 <a class="nav-link js-scroll-trigger" href="/result">Search Poll</a>
                 <div class="dropdown-divider"></div>
               </div>
-            </li>       
+            </li>        -->
           </ul>
         </div>
       </div>
@@ -50,9 +53,13 @@ export default {
   data () {
     return { 
       homehref:"#page-top",
+      defaultClass:"nav-link js-scroll-trigger",
+      activeClass:"nav-link js-scroll-trigger active",
+      
       homeClass: "nav-link js-scroll-trigger active",
+      createPollClass:"nav-link js-scroll-trigger",
+      resultClass:"nav-link js-scroll-trigger",
       abouthref:"#about",
-      featurehref:"#feature",
       guidehref:"#guide",
       contacthref:"#contact",
       faqhref: "#faq"
@@ -61,15 +68,20 @@ export default {
   mounted(){
     console.log("navigationbar.vue => Current Route: " + this.$route.path)
     if(this.$route.path != '/'){
-      this.homeClass = "nav-link js-scroll-trigger"
+      this.homeClass = this.defaultClass
       this.homehref = "/" + this.homehref
       this.abouthref = "/" + this.abouthref
-      this.featurehref = "/" + this.featurehref
       this.guidehref = "/" + this.guidehref
       this.contacthref = "/" + this.contacthref
       this.faqhref = "/" + this.faqhref
+          
+      if(this.$route.path == '/createpoll'){
+        this.createPollClass = this.activeClass
+      }else if(this.$route.path == '/result'){
+        this.resultClass = this.activeClass
+      }
     }
-    
+
     if($(window).scrollTop()>100)
       $("#mainNav").css({"background-color" : "rgba(0, 0, 31, 0.9)"});
 
@@ -115,7 +127,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #navbarResponsive ul li a{
-    font-size: 20px;
+  font-size: 20px;
 }
 .dropdown-menu a{
   color:black !important;

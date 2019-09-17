@@ -1,5 +1,5 @@
 <template>
-  <section id="guide">
+  <section id="guide" class="bg-light">
       <h2>Guide</h2>
       <div class="container-voting-process">
 		<ol class="step-list">
@@ -8,12 +8,11 @@
                     <div class="content">
                         <div id="step1d" class="body">
                             <a><h2>Create Your Poll</h2></a>
-                            <p>Create and customize your poll by filling in the form created by us so that your vote can be created hassle- free!
+                            <p>Create and customize your poll by filling in the form!
                             <br><br>
-                            Set your poll title, description, voting options voting period to get your vote ready to go.
+                            Set your poll type, poll title, description, voting period to get your poll ready to go.
                             </p>
                         </div>
-
                         <div class="icon">
                             <img src="https://pngimage.net/wp-content/uploads/2018/05/create-icon-png-2.png" alt="Check">
                         </div>                
@@ -24,11 +23,10 @@
                 <div class="step-list__item__inner">
                     <div class="content">
                         <div id="step2d" class="body">
-                            <a><h2>View Created and Bookmarked Poll</h2></a>
-                            <p>Once you have created your poll, you can view your history of polls created as well as any polls that you bookmarked so you can always view them whenever you need.
+                            <a><h2>View your created Poll</h2></a>
+                            <p>Once you have created your poll, you can view your poll by searching the poll public address or public key.
                             </p>
                         </div>
-
                         <div class="icon">
                             <img src="https://image.flaticon.com/icons/png/512/27/27630.png" alt="Check">
                         </div>                
@@ -41,12 +39,10 @@
                     <div class="content">
                         <div id="step3d" class="body">
                             <a><h2>Vote!</h2></a>
-                            <p> And just like that, voters can easily do their part in your voting process.
-                                Each voter can only have 1 chance to vote to ensure high accuracy in the polling result. 
-                               
+                            <p> And just like that, voters can easily do their part in the voting process.
+                                Each voter can only have 1 chance to vote to ensure high accuracy in the polling result.
                             </p>
                         </div>
-
                         <div class="icon">
                             <img src="https://cdn.onlinewebfonts.com/svg/img_532042.png" alt="Check">
                         </div>                
@@ -64,7 +60,6 @@
                             You can get to see the percentages as well as the chart representation of the results to get a better idea of the overall happenings in your poll.
                             </p>
                         </div>
-
                         <div class="icon">
                             <img src="https://pngimage.net/wp-content/uploads/2018/06/result-icon-png-1.png" alt="Check">
                         </div>                
@@ -83,7 +78,8 @@ export default {
     return {
     }
   }
-}</script>
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
