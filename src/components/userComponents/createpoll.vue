@@ -188,13 +188,7 @@ export default {
       }
     },
     mounted(){
-      // if(!localStorage.usertoken){
-      //   router.push({name: 'Entry' })
-      // }else if(localStorage.usertoken){
-      //   this.dateEnd = this.setDefaultDate()
-      //   var token = jwtDecode(localStorage.usertoken)
-      //   this.$parent.ID = token.ID
-      // }
+      this.dateEnd = this.setDefaultDate()
 
       $("form").keypress(function(e){
         if (e.which == 13) { //Enter key
