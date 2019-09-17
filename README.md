@@ -4,7 +4,7 @@
 
 ## Node Information
 > http://172.104.188.6:3000/chain/height
-> Elephant version (0.13.0)
+Elephant version (0.13.0)
 
 ## Build Setup
 
