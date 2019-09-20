@@ -23,10 +23,10 @@
               <a class="nav-link js-scroll-trigger" :href="contacthref">Contact</a>
             </li>
             <li class="nav-item">
-              <a :class="createPollClass" href="/createpoll">Create Poll</a>
+              <a :class="createPollClass" href="/createpoll">Create</a>
             </li>
             <li class="nav-item">
-              <a :class="resultClass" href="/result">Search Poll</a>
+              <a :class="resultClass" href="/result">Search</a>
             </li>
            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import EventBus from './EventBus'
 
 export default {
   name: 'Navigation',

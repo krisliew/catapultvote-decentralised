@@ -21,11 +21,11 @@
 </template>
 
 <script>
-import Navigation from './navigationbar'
-import About from './homeComponents/about'
-import Guide from './homeComponents/guide'
-import Contact from './homeComponents/contact'
-import Faq from './homeComponents/faq'
+import Navigation from '../navigationbar'
+import About from './subComponent/about'
+import Guide from './subComponent/guide'
+import Contact from './subComponent/contact'
+import Faq from './subComponent/faq'
 
   export default {
     name: 'Home',
@@ -37,8 +37,7 @@ import Faq from './homeComponents/faq'
       'Faq':Faq
     },
     data() {
-      return {
-      }
+      return {}
     },
     mounted(){
       // var theAnchor = [];
@@ -59,7 +58,7 @@ import Faq from './homeComponents/faq'
 header{
   padding: 156px 0 100px;
   height: 100vh;
-  background-image: url(../assets/img/index/header.jpg);
+  background-image: url(../../assets/img/index/header.jpg);
   background-size: cover;
   background-repeat:no-repeat;
 }

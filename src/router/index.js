@@ -3,9 +3,9 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-import Home from '@/components/home'
-import CreatePoll from '@/components/userComponents/createpoll'
-import Result from '@/components/userComponents/result'
+import Home from '@/components/staticComponent/home'
+import CreatePoll from '@/components/functionalComponent/createpoll'
+import Result from '@/components/functionalComponent/result'
 
 export default new Router({
   mode:'history',

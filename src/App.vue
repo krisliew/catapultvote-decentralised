@@ -15,7 +15,6 @@ import jwtDecode from 'jwt-decode'
 import Navigation from './components/navigationbar'
 import Footer from './components/footer'
 import Rocket from './components/utility/rocket'
-import EventBus from './components/EventBus'
 import router from './router'
 
 export default {
