@@ -1,3 +1,5 @@
+*PS: This repo and node below is outdated, updating this repo on a new project soon at https://github.com/soonjing/symbol-decentralised-voting-system*
+
 # Catapult Vote
 
 > An online voting system using NEM Catapult Blockchain
@@ -24,4 +26,4 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-*PS: The node above is not working at the moment, will update this repo when I am free :)*
+
